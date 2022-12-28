@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*,
+*::after,
+*::before.body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: #333;
+}
+input {
+  color: white;
+}
+input:focus {
+  border: 0;
+  outline: 0;
+}
+.actual-body {
+  width: 85%;
+  gap: 2rem;
+  margin: 4rem auto;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  background-color: aliceblue;
+  color: white;
+  font-family: "Poppins", "Mon";
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 80vh;
+}
+.actual-body > div {
+  height: 22rem;
+  width: 27% !important;
+  margin: 1.5rem 0;
+  border-radius: 20px;
+  background-color: #333;
+  margin-bottom: 2rem;
+}
+.adder-wrapper {
+  padding: 0.25rem 1rem;
+}
+.adder-wrapper > div {
+  width: fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.add-logo {
+  margin: 3.5rem auto 1rem auto;
+}
+.add-logo i {
+  font-size: 4.15rem;
+}
+.add-header {
+  font-size: 2.05rem;
+  margin: 0.5rem auto 0.25rem auto;
+}
+.add-description {
+  padding: 0 0.85rem;
+  font-size: 0.85rem;
+  opacity: 0.65;
+  margin: 0.25rem auto 4.5rem auto;
+}
+/* ac */
+.notepad {
+  color: white !important;
+  position: relative;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem 1.25rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: darkorange;
+}
+
+.title-wrapper {
+  margin: 0.15rem auto 1.05rem auto;
+}
+.title-wrapper input {
+  background: transparent;
+  border: 0;
+  height: 2rem;
+  width: 90%;
+  font-size: 1.55rem;
+}
+.text-area-wrapper textarea {
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 300;
+  background-color: transparent;
+  border: 0;
+  width: 95%;
+  margin: 0 auto;
+}
+textarea:focus {
+  border: 0ch;
+  outline: 0ch;
+}
+textarea::placeholder {
+  font-size: 0.95rem;
+  padding-left: 1rem;
+}
+
+.area {
+  padding: 0.25rem 0.5rem;
+}
+
+@media (max-width: 567px) {
+  .actual-body {
+    flex-direction: column !important;
+    display: block;
+    width: 100% !important;
+    height: 100vh !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .actual-body > div {
+    width: 70% !important;
+    display: block;
+    margin: 2rem auto;
+  }
+}
