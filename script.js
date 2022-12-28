@@ -11,3 +11,11 @@ addNote.forEach((Element) => {
     console.log(placementArea);
   });
 });
+
+// closer button
+
+const btnClose = document.querySelector(".close");
+btnClose.addEventListener("click", (e) => {
+  const currentNp = e.target.parentElement.parentElement.parentElement;
+  placementArea.removeChild(currentNp);
+});
